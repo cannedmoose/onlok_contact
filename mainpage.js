@@ -26,6 +26,8 @@
         window.requestAnimationFrame(delete_all_cookies);
     }
 
+    window.setTimeout(() => document.FlareTrk.repop(), 1000);
+
 
     window.onmessage = function (e) {
         if (e.data == 'attributer_cookie_reset') {
