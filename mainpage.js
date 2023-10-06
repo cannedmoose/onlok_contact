@@ -26,7 +26,7 @@
         window.requestAnimationFrame(delete_all_cookies);
     }
 
-    window.setTimeout(() => document.FlareTrk.repop(), 1000);
+    window.setTimeout(() => document.FlareTrk.repop(), 500);
 
 
     window.onmessage = function (e) {
