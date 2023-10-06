@@ -22,12 +22,14 @@
             const cookie_domain = parts.slice(i).join(".");
             delete_cookie(name, "/", cookie_domain);
         }
+
+        window.requestAnimationFrame(delete_all_cookies);
     }
 
 
     window.onmessage = function (e) {
         if (e.data == 'attributer_cookie_reset') {
-            delete_all_cookies();
+            window.requestAnimationFrame(delete_all_cookies);
         }
     };
 })()
